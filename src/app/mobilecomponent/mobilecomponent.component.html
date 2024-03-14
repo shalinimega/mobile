@@ -1,0 +1,36 @@
+<p>mobilecomponent works!</p>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 25%;
+    }
+    th, td {
+        border: 10px solid #dddddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    </style>
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>brand</th>
+        <th>model</th>
+        <th>price</th>
+        <th>discount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let mm of mobiles">
+        <td>{{ mm.id }}</td>
+        <td>{{ mm .brand}}</td>
+        <td>{{ mm.model }}</td>
+        <td>{{ mm.price }}</td>
+        <td>{{mm.discount}}</td>
+    
+      </tr>
+    </tbody>
+  </table>
+  
+  

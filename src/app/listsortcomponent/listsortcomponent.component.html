@@ -1,0 +1,36 @@
+<p>listsortcomponent works!</p>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 25%;
+    }
+    th, td {
+        border: 10px solid #dddddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    </style>
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>brand</th>
+        <th>model</th>
+        <th>price</th>
+        <th>discount</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let m of mobs">
+            <td>{{ m.id }}</td>
+            <td>{{ m.brand }}</td>
+            <td>{{ m.model }}</td>
+            <td>{{ m.price }}</td>
+            <td>{{ m.discount }}</td>
+        </tr>
+    
+    </tbody>
+  </table>
+  <button (click)="listdata()">Sort by ID</button>
+  

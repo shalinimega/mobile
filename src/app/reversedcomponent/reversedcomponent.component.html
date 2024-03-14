@@ -1,0 +1,36 @@
+<p>reverdata show works!</p>
+<h1 reverse data showing></h1>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 25%;
+    }
+    th, td {
+        border: 10px solid #dddddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    </style>
+<table>
+      <tr>
+        <th>ID</th>
+        <th>brand</th>
+        <th>model</th>
+        <th>price</th>
+        <th>discount</th>
+      </tr>
+    
+        <tr *ngFor = "let m of mbl">
+            <td>{{ m.id }}</td>
+            <td>{{ m.brand }}</td>
+            <td>{{ m.model }}</td>
+            <td>{{ m.price }}</td>
+            <td>{{ m.discount }}</td>
+        </tr>
+    
+    
+  </table>
+  <button (click) = "reslistdata()">Sort by ID</button>
+  
+

@@ -1,0 +1,30 @@
+<p>postdata works!</p>
+<form>
+    <div>
+        <label>Brand</label>
+        <br>
+        <input type="text" name="brand" [(ngModel)]="w.brand">  
+    </div>
+    <br>
+    <div>
+        <label>Model</label>
+        <br>
+        <input type="text" name="model" [(ngModel)]="w.model">
+    </div>
+    <div>
+        <label>Price</label>
+        <br>
+        <input type="text" name="price" [(ngModel)]="w.price">
+    </div>
+    <div>
+        <label>Discount</label>
+        <br>
+        <input type="text" name="discount" [(ngModel)]="w.discount">
+    </div>
+    <br>
+    
+    <button (click) = "savedata()"> Submit </button>
+       
+          
+</form>
+

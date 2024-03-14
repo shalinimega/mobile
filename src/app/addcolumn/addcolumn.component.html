@@ -1,0 +1,39 @@
+<p>addcolumn works!</p>
+
+<style>
+    table {
+        border-collapse: collapse;
+        width: 25%;
+    }
+    th, td {
+        border: 10px solid #dddddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    </style>
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Brand</th>
+        <th>Model</th>
+        <th>Price</th>
+        <th>Discount</th>
+        <th>Discounted Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let k of addmobs">
+        <td>{{ k.id }}</td>
+        <td>{{ k.brand }}</td>
+        <td>{{ k.model }}</td>
+        <td>{{ k.price }}</td>
+        <td>{{ k.discount }}</td>
+        <td>{{ k.diss }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button (click)="addcolumndata()"></button>
+  
+  

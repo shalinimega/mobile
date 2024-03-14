@@ -1,0 +1,31 @@
+<p>duplicatecomponent works!</p>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 25%;
+    }
+    th, td {
+        border: 10px solid #dddddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    </style>
+<table>
+    <thead>
+      <tr>
+        <th>brand</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let i of mo">
+        <td>{{ i }}</td>
+        
+      </tr>
+    </tbody>
+  </table>
+  <button (click) = " brands() " ></button>
+    
+  
+  
